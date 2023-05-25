@@ -1,0 +1,118 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 30px);
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #008080; /* Adjust the color as desired */
+  padding: 20px;
+}
+
+.sidebar h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.bottom-bar {
+  background-color: #010081;
+  height: 30px;
+}
+
+.workplace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 200px);
+  height: 100%;
+  padding: 10px;
+}
+
+.navigation {
+  list-style: none;
+}
+
+.navigation li {
+  margin-bottom: 10px;
+}
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.main-window {
+  flex: 0 0 70%; /* Adjust the percentage as desired */
+  height: 80%;
+  background-color: #ffffff;
+  padding: 0;
+  position: relative;
+  border: 2px solid #008080;
+  border-top: none;
+}
+
+.window-header {
+  background-color: #008080;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.window-header h4 {
+  color: white;
+  margin-left: 15px;
+}
+
+.window-options {
+  display: flex;
+  gap: 4px;
+  margin-right: 4px;
+}
+
+.window-option {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.window-option.minimize {
+  background-color: #f1c40f;
+}
+
+.window-option.maximize {
+  background-color: #2ecc71;
+}
+
+.window-option.close {
+  background-color: #e74c3c;
+}
+
+.window-content {
+  padding: 20px;
+}
+
+/* Additional styles for window controls */
+.window-option:hover {
+  background-color: #ccc;
+}
+
+.window-option:active {
+  transform: scale(0.9);
+}

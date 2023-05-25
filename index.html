@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows 95 Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add these scripts to the <head> section of your HTML file -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+
+<script>
+$(function() {
+  $(".main-window").draggable({
+    containment: ".workplace",
+    cancel: ".sidebar"
+  });
+});
+</script>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="sidebar">
+      <h1>POROKH</h1>
+      <ul class="navigation">
+        <li><a href="#about">About</a></li>
+        <li><a href="#socials">Socials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </div>
+
+    <div class="workplace">
+<div class="main-window">
+  <div class="window-header">
+    <h4>main_page.exe</h4>
+    <div class="window-options">
+      <div class="window-option minimize"></div>
+      <div class="window-option maximize"></div>
+      <div class="window-option close"></div>
+    </div>
+  </div>
+  <div class="window-content">
+    <!-- Content goes here -->
+  </div>
+</div>
+</div>
+
+</div>
+
+  <div class="bottom-bar">
+  
+</div>
+
+</body>
+</html>
