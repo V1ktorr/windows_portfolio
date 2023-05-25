@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M575,0H225C100,0,0,100,0,225v350c0,125,100,225,225,225h350c125,0,225-100,225-225V225C800,100,700,0,575,0z
+	 M300,625c0,15-10,25-25,25H175c-15,0-25-10-25-25V325c0-15,10-25,25-25h100c15,0,25,10,25,25V625z M225,275c-42.5,0-75-32.5-75-75
+	s32.5-75,75-75s75,32.5,75,75S267.5,275,225,275z M650,625c0,15-10,25-25,25h-75c-15,0-25-10-25-25v-87.5v-25v-50
+	c0-20-17.5-37.5-37.5-37.5S450,442.5,450,462.5v50v25V625c0,15-10,25-25,25h-75c-15,0-25-10-25-25V325c0-15,10-25,25-25h100
+	c7.5,0,12.5,2.5,17.5,7.5c15-5,30-7.5,45-7.5c75,0,137.5,62.5,137.5,137.5V625z"/>
+</svg>
