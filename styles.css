@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 a:hover {
@@ -18,6 +17,8 @@ body {
 .container {
   display: flex;
   height: calc(100vh - 40px);
+  position: relative;
+  z-index: 1;
 }
 
 .sidebar {
@@ -27,6 +28,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: transform 0.3s ease-in-out, display 0s 0.3s;
+}
+
+.sidebar.hide {
+  transform: translateX(-100%);
+  transition-delay: 0s, 0.3s;
+  display: none;
 }
 
 .sidebar h1 {
@@ -34,14 +42,17 @@ body {
   margin-bottom: 20px;
 }
 
+
 .workplace {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: calc(100% - 200px);
   height: 100%;
   padding: 10px;
 }
+
 
 .navigation {
   list-style: none;
@@ -63,6 +74,12 @@ body {
   align-items: center;
 }
 
+.nav-bottom span {
+  color: white;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 .nav-socials a {
   margin: 0 10px;
   width: 30%;
@@ -72,10 +89,11 @@ body {
   flex: 0 0 70%; /* Adjust the percentage as desired */
   height: 80%;
   background-color: #ffffff;
-  padding: 0;
   position: relative;
+  z-index: 0;
   border: 2px solid #008080;
   border-top: none;
+  padding: 0 0 20px;
 }
 
 .main-window.dragging {
@@ -188,8 +206,10 @@ body {
 
 .window-content {
   display: none;
+  overflow: auto;
+  box-sizing: border-box;
   height: 100%;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .window-content.active {
@@ -212,7 +232,7 @@ body {
   background-color: #0000a8;
   height: 40px;
   padding: 0 10px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -254,4 +274,34 @@ body {
 
 .controls {
   display: flex;
+  position: relative;
 }
+
+  .notification {
+    background: #0097A7;
+    color: black;
+    z-index: 9999;
+    border-radius: 4px;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: -95px;
+    bottom: 110%;
+    right: 38%;
+    padding: 10px 10px;
+    cursor: default;
+  }
+    
+    .notification:after {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 151, 167, 0);
+      border-top-color: #0097A7;
+      border-width: 16px;
+      margin-left: -16px;
+    }
