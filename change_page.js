@@ -1,14 +1,16 @@
 $(function() {
-  // Handle navigation link clicks
   $(".nav-link").click(function(e) {
     e.preventDefault();
     var contentId = $(this).data("content");
 
-    // Remove active class from all window contents
-    $(".window-content").removeClass("active");
-
-    // Add active class to the corresponding window content
-    $("#" + contentId).addClass("active");
+    // Check if the clicked nav link is "Email"
+    if (contentId === "email") {
+      $(".email-window").show();
+    } else {
+      $(".email-window").hide();
+      $(".main-window .window-content").removeClass("active");
+      $("#" + contentId).addClass("active");
+    }
   });
 });
 
